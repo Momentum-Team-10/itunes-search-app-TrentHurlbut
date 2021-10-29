@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="main.js" defer></script>
-  <title>Music Search</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="main.js" defer></script>
+        <title>Music Discovery Lab</title>
+    </head>
+    <body class="root">
+        <div class="discover-box">
+            <h1 id="page-header">Music Discovery Lab</h1>
+            <div class="search-by">
+                <h1>Which do you prefer?</h1>
+                <select title="music-selector" id="music-menu">
+                    <option value="song">Songs</option>
+                    <option value="music-video">Music Videos</option>
+                </select>
+            </div>
+            <div id="play-box"></div>
+            <div id="discovery-field">
+                <form id="discovery-form">
+                    <input
+                        id="discovery-text"
+                        type="text"
+                        placeholder="Search by artist, album, or song title."
+                        required
+                    />
+                    <button id="search" type="submit">Let's Go!</button>
+                </form>
+            </div>
+        </div>
+        <div class="results-box">
+            <h1 id="results-display card">Search Results</h1>
+            <div id="results-field"></div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,84 @@
+html body {
+    color: #ff6978;
+    background-color: #6d435a;
+}
+
+#results-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 75%;
+}
+
+.discover-box {
+    width: 50%;
+    justify-items: center;
+    margin: auto;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px 20px 20px !important;
+    padding: 30px;
+    background-color: #f0f7f4;
+}
+
+.artist * {
+    text-align: center;
+    margin: 50%;
+    float: none;
+}
+
+.artist img {
+    width: 120px;
+}
+
+.results-box {
+    margin: 20px;
+}
+
+.results-box * {
+    margin: auto;
+    justify-content: center;
+}
+
+.song-info {
+    justify-self: center;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#discover-text {
+    background-color: #f0f7f4;
+}
+
+#page-header {
+    font-size: 60px !important;
+}
+
+select,
+input {
+    margin: 0px 0px 20px 0px;
+}
+
+button {
+    background-color: #60866e !important;
+}
+
+.video {
+    margin: 20px;
+}
+
+.video-info {
+    text-align: center;
+    background-color: transparent !important;
+}
+
+video {
+    max-width: 400px;
+    border: 3px #f0f7f4 solid;
+}
